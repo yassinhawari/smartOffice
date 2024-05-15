@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "222396900767",
+    "firebase_url": "https://office-f66f6-default-rtdb.firebaseio.com",
+    "project_id": "office-f66f6",
+    "storage_bucket": "office-f66f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222396900767:android:3c025b6c7852bf178dc9aa",
+        "android_client_info": {
+          "package_name": "com.example.smartoffice"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbYnSb_vUoj29uWPXxzoSWKB7smP5Vu6s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
