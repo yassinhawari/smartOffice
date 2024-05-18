@@ -15,14 +15,6 @@
 HardwareSerial mySerial(2);
 Adafruit_Fingerprint finger = Adafruit_Fingerprint(&mySerial);
 //firebase
-#define USER_EMAIL "hawari.yassine.yh@gmail.com"
-#define USER_PASSWORD "123456789"
-#define API_KEY "AIzaSyBbYnSb_vUoj29uWPXxzoSWKB7smP5Vu6s"
-#define DATABASE_URL "https://office-f66f6-default-rtdb.firebaseio.com/"
-
-#define FIREBASE_PROJECT_ID "office-f66f6"
-#define FIREBASE_CLIENT_EMAIL "firebase-adminsdk-e3jhu@office-f66f6.iam.gserviceaccount.com"
-const char PRIVATE_KEY[] PROGMEM ="-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCMJXTVr0YyuD4q\ncC/nPU+OZIagn4lMMaLKVeMC4DC0Ui5uzgkbufGsEk6gs9iyNEk5Iq3BJE0rl9fj\nfQAId/rqusCsF9Ykk3yUaCEhyPX/yr84gyO/uAyIEg2hR9MysBAmxBc6KPerql1G\nuui1D06HcVh7IlvwvdNlcwt3CQXS4yRTJOD1fu/6EJ6wK7Y1a9jRlGVW8VErpQKd\nsVtbhVb00MrsmrRJyvABOPm07KnYc7TkLwa7LWLA+r4dwYqV2GuGxLosqXmhIKNC\n3/TKW6FoHs4NYOuGg9TChcTKfbR24Anb0XLXKXTRn5YDip+87fNi158EIixnUdss\nvZnWIgdvAgMBAAECggEAJTM8FAx2YbguKC2nSYYou+9LHQ+77hGu2G5716OSygqW\ncKsYF9f/omEppdaXSpY+aYAfBwmPwmaH08a2X4kZfX0c75FUMllD1FDfmowxYDh9\nEY8dyiIckXHZVFowYWACqYebcsC1HUgXglLSulzZx3H6vpScOwboOiGThYFLnnJv\n7xdB9CQaVI5eQsQ6RJCDoN77sxCvEPoDwh00epBEBpJrH4TQfNhaZqXG+/CTM4Rv\nEOotR5chqarKRb3yciLoE+JwwPK0B5Fjk/Z9w8MsrN5grdJPbuaRhw5XrCH/XSki\ni9VdXgRKhAmLGX329I7Z/7fjQPDRvqsOixNRG0h8QQKBgQDESuXnxwK+fpzdMYLU\n09fXZJ1JXcLQt9G8eqr6YARq5tyRXJIknu8+X1zl7m+0vDyB4aOCSCEzEi6kQC6U\nPw/q5IQEyc6CQHT76PT+Qrcj+RoK1bioLfofrFfQDgmkwz1SqaOHNVVrRnzwSMVM\nS2+dHNORbQFOcFZSmdQybruF5wKBgQC2xoG1u2808g2VzQex++D/Oi+cRFhwxSja\nAGYNwILEg9KlufITNEsifU1s7d/rsMtDacY7QVw5FtzCrhFIKKw3EksAF/z5suH/\nc280ihnbys07HuPuzJamsywIPhs+KGomycF5nxibKyCKfVwhE9BqMMwHkvKtlgWF\nxqA7sEAxOQKBgCL+AxwdcxTId2hLIjqUhT7FlfB1QXx5uG70IzS9FyyDeUCEkxzq\nJFYnI+VtawZ6JAM3WTGpcBmtnRj0xBjzYQALuqkr3J+FpBUgQ0RsWj+UcZsK3H9G\nqvcofwL87aUslOr+iMNas56LE0y2fE2MiRomAGVFXF1CU3EoMRbIfK9zAoGAcIr2\nn5JUPYO1/cGLtXpk5oNLgatL0dR0/Rc1v84EN0D8WfOPLWgLw6boH+Sw9o2b+1yM\nJTxvru9266EHHyl8MUTgTaR3rsEJC6RmmzFWDtJnYLn6m7X6JZc5y7GCUNnN0yh0\nK5FdM15w4RWjvvJWaKy3VQqUx3IS4HaXf2ldfXECgYAVCneqH2iELAIO+tSNV6ac\n9oHaDyGzQJSvNxTK81p1+GScBOKI2otcP79j4ZA1CralR45GuJeRs1zepNIxDqrT\noF4rcLjU9BjZix6btaw55OrUN0g61V87YF+qG49tHpFW1lTPbg3hM3v8HDeHiZNn\nDY6iJqYBmInTLZr9Fc8VRw==\n-----END PRIVATE KEY-----\n";
 
 //time
 #include <NTPClient.h>
@@ -50,7 +42,6 @@ bool isInLockDownMode = false;
 bool buttonLockdown = false;
 bool timeLockdown = false;
 bool dirty = false;
-String token="dCboOKdLSyGergtHaTsvkr:APA91bEYQs6Ng1FJx2HRI_qm8PDlDafzKiDI7oZG6EILdR3u6e777BczKLfjBhr_7uuO5W2NzzObNCX9Wa_ojHid2q45quAjrG61zQefFHDjDff6rU8PDBx98VGXalT_AwHLonkRUkXM";
 String addName = "";
 int removeId = 0;
 bool taskCompleted = false;
