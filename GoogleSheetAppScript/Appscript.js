@@ -1,12 +1,4 @@
 
-function getEnvironment() {
- var environment = {
-   spreadsheetID: "161IreRieWL3i_2haBL_42EAuQFj5fl8WYIpo0TPNL1I",
-   firebaseUrl: "https://office-f66f6-default-rtdb.firebaseio.com/",
-   DATABASE_PATH : "smartOffice/workers/",
- };
- return environment;
-}
 
 function fetchDataFromFirebase() {
   // Initialize FirebaseApp
