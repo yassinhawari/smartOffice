@@ -149,11 +149,6 @@ class WorkerListViewModel(context: Context,database: DatabaseReference) : ViewMo
         }
     }
 
-    companion object {
-        private const val SPREADSHEET_ID = "161IreRieWL3i_2haBL_42EAuQFj5fl8WYIpo0TPNL1I"
-        private const val RANGE = "SmartOffice!A5:H"
-        private const val googleApiKey = "AIzaSyCADDLl67Vd1G64JO7kAdvvU44bZOEryGE"
-    }
     fun updateDataPointMap() {
         val newWorkerSheets = _workerSheetsFlow.value
         val updatedMap = transformWorkerSheetsToDataPointMap(newWorkerSheets)
